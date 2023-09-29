@@ -207,32 +207,38 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
+		/*margin: 0 auto; 
 		max-width: calc(100% - 100px);
-		width: 1200px;
-	}
+		width: 1200px;  */
 
+		width: 100%;
+	}
+		/*
 		@media screen and (max-width: 1280px) {
 
 			.container {
 				width: 100%;
 			}
 
-		}
+		}   */
 
-		@media screen and (max-width: 980px) {
+		@media screen and (/*max-width: 980px*/ min-width: 737px) {
 
 			.container {
-				width: 100%;
+				/*width: 100%; */
+				max-width: 980px;
+				margin: 0 auto;
 			}
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (/*max-width: 736px*/ min-width: 981px) {
 
 			.container {
-				width: 100%;
-				max-width: 100%;
+				/*width: 100%;
+				max-width: 100%; */
+				max-width: 1200px;
+				margin: 0 auto;
 			}
 
 		}
@@ -480,22 +486,26 @@ input, select, textarea {
 					padding-top: 100px;
 				}
 
-		@media screen and (max-width: 1280px) {
+		/* Default styles for mobile (no media query) */
+		@media screen and (max-width: 1280px) {   
 
 			.row {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
+				margin-top: -35px;
+				margin-left: -35px
 			}
 
 				.row > * {
 					box-sizing: border-box;
+					padding: 35px 0 0 35px; /* added */
 				}
 
 				.row.gtr-uniform > * > :last-child {
 					margin-bottom: 0;
-				}
+				}   
 
 				.row.aln-left {
 					justify-content: flex-start;
@@ -723,24 +733,28 @@ input, select, textarea {
 							padding-top: 70px;
 						}
 
-		}
+		}  
+		/* Media query for tablets */				
+		@media screen and ( max-width: 980px) {
 
-		@media screen and (max-width: 980px) {
-
+		
 			.row {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
-			}
+			} 
 
 				.row > * {
-					box-sizing: border-box;
+					box-sizing: border-box; 
+					
 				}
 
 				.row.gtr-uniform > * > :last-child {
 					margin-bottom: 0;
-				}
+				} 
+
+				
 
 				.row.aln-left {
 					justify-content: flex-start;
@@ -969,8 +983,8 @@ input, select, textarea {
 						}
 
 		}
-
-		@media screen and (max-width: 736px) {
+		/* Media query for desktops */
+		@media screen and (max-width: 736px /*min-width: 1281px*/) {
 
 			.row {
 				display: flex;
