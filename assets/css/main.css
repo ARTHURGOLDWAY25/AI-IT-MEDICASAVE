@@ -1425,6 +1425,24 @@ input, select, textarea {
 
 		}
 
+		.image.featured.event {
+			display: block;
+			width: 100%;
+			margin: 0 0 2.5em 0;
+			position: relative; /* Create a positioning context for child images */
+			/*overflow: hidden; /* Hide any part of the second image that overflows */
+		}
+
+		.image.featured.event img.centered-image-events{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 90%;
+			max-height: 90%;
+			z-index: 1;
+		}
+
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
