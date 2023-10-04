@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- PROPERTIES THAT MAY APPLY TO CSS STYLING --
+    * background-color: rgba(0, 0, 0, 0.8); 
+    * backdrop-filter: blur(20px);       */
+
+body {  
+    background-image: radial-gradient(circle, rgba(119, 130, 134, 0.3), rgba(0, 0, 0, 0.8)), url("https://fastly.picsum.photos/id/43/1280/831.jpg?hmac=glK-rQ0ppFClW-lvjk9FqEWKog07XkOxJf6Xg_cU9LI");  
+   
+}
+
+html {
+    font-size: 16px; /* Adjust the base font size as needed */
+}
+
+
+/* Header content container */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.navbar{
+    margin-bottom: 15px;
+}
+
+
+h1{
+    text-transform: uppercase;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.parent-element > a, h1 {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+	font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+    
+   
+
+    &:hover{
+        color: #ff6600; /* Change the text color on hover */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        text-decoration: underline;
+       text-underline-offset: 8px;
+    }
+}
+
+/* Hover child elements on large screen */
+.sub-menu > li, a:hover{
+    padding: 5px;
+    color: rgb(251, 255, 5);
+    font-weight: 600;
+    
+}
+
+
+#header{
+    background-color: rgba(50, 53, 54, 0.9);
+    margin: 0 auto;
+    max-width: calc(100% - 100px);
+    padding: 1em;
+    border-radius: 5px;
+    border: 13px solid rgba(67, 72, 75, 0.9);
+    width: 90%;
+   
+}
+
+/* Container */
+.container {
+    background: radial-gradient(circle, rgba(77, 80, 83, 0.9), rgba(43, 48, 51, 0.6)), black;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+
+@media screen and (max-width: 950px) {
+    .header-content {
+        flex-direction: column;
+        row-gap: 18px;  
+    }  
+
+    .parent-element:hover{
+        padding: 5px;
+    }
+     
+}
+
+@media screen and (max-width: 750px) {
+    .header-content {
+        flex-direction: column;
+        row-gap: 13px;
+        float: left; 
+          
+    }
+
+    nav, ul, li{
+        display: block; 
+        padding: 1px 0;  
+    
+    } 
+     
+}
+
+/*Start with styling the menu icon*/
+#menu-icon{
+    color: rgba(200, 211, 214, 0.8);
+    font-weight: 500;
+    font-size: 2rem;
+    cursor: pointer;
+   
+}
+
+/*Initially hide the menu icon & chechbox*/
+#menu-icon, 
+#menu-toggle{
+    display: none;
+}
+
+
+@media screen and (max-width: 750px) {
+    #menu-icon {
+        display: block;  
+        margin-left: -10px;
+}
+
+    .navbar{
+        display: none;
+    }
+
+    h1{
+        display: none;
+    } 
+
+    .header-content{
+        height: 10vh;
+    }
+
+     
+}
+
+#menu-toggle:checked ~ .navbar{
+    display: block;
+    font-size: 2rem;
+    margin-left: -60px; 
+} 
+
+/* Without purpose here ==> 
+#menu-toggle:checked ~ .navbar ul li a:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+    padding: 15px 0;
+}  */
+
+
+#menu-toggle:checked ~ h1{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: -10px;
+}
+#menu-toggle:checked ~ #menu-icon{
+    margin-left: -150px;
+    margin-bottom: -10px;
+}
+
+
+
+
+/* Initially hide the sub-menu */
+.menu .sub-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 5px 5px 10px rgba(50, 53, 54, 0.9);
+    width: 270px;
+    height: auto;
+}
+
+/* Show the sub-menu when the parent menu item is hovered */
+.menu > li:hover .sub-menu{
+    display: block;
+    margin-left: -70px;
+}
+
+
+
+.menu > li:hover .sub-menu > li, a{
+   margin-top: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgba(206, 182, 5, 0.9);
+   text-decoration: underline;
+   white-space: nowrap;
+   text-underline-offset: 5px;
+   display: block;
+
+   transition: 1s
+   
+}
+
+/* Style the main menu items to have a relative position */
+.menu > li {
+    position: relative;
+}
+
+    /*
+    @media screen and (max-width: 750px) {
+        .menu{
+            visibility:hidden;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            box-shadow: 5px 5px 10px rgba(200, 211, 214, 0.8);
+            font-size: medium;
+            color: rgba(206, 182, 5, 0.9);
+            
+        }
+    }
+    
+#menu-toggle:checked ~ .menu{
+    display: block;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
