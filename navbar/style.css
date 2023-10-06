@@ -10,7 +10,8 @@
 
 body {  
     background-image: radial-gradient(circle, rgba(119, 130, 134, 0.3), rgba(0, 0, 0, 0.8)), url("https://fastly.picsum.photos/id/43/1280/831.jpg?hmac=glK-rQ0ppFClW-lvjk9FqEWKog07XkOxJf6Xg_cU9LI");  
-   
+   background-size: cover;
+   background-attachment: fixed;
 }
 
 html {

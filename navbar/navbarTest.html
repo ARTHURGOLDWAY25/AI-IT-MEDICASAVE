@@ -4,31 +4,234 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Navbar test</title>
 </head>
 <body>
+  <header>
+ <!-- Navbar content  -->
+    <nav class="nav-menu">
 
-
-
-  
-
-  <nav class="nav-menu">
+      <!--Checkbow and burger menu icon  -->
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" id="menu-icon">&#9776;</label>
     
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" id="menu-icon">&#9776;</label>
-    
+            <!-- Nested logo and list elements -->
+              <label class="logo">AI IT MEDICASAVE</label>
+              <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">partners</a></li>
+                <li><a href="#">events</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+    </nav>
+  </header>
 
-    <label class="logo">AI IT MEDICASAVE</label>
-   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About us</a></li>
-    <li><a href="#">partners</a></li>
-    <li><a href="#">events</a></li>
-    <li><a href="#">Contacts</a></li>
-   </ul>
-</nav>
- 
+    <!-- Main Wrapper -->
+  <div class="container-fluid no-padding">
+    <div class="container">
+      <div class="row">
+          <!-- First Column -->
+          <div class="col-md-7 col-sm-12">
+              <div class="bg-light p-3" style="border: 3px solid blue; margin-bottom: 3px;">
+                  <!-- Content for the first column -->
+                  <h4>AI IT MEDICASAVE en détails</h4>
+                  <p>Avec l'émergence de l'intelligence artificielle, en particulier au cours des dernières années, notre équipe d'experts à travers le monde a élaboré un projet clair et concis. L'objectif du projet consiste à appliquer les nanotechnologies aux cellules sanguines des êtres humains souffrant de graves maladies afin de détecter les cellules endommagées et de les réparer sans causer de préjudice au patient. En particulier, cette pratique a été utilisée avec succès par notre équipe d'experts à <span style="color: blue; text-transform: uppercase; font-weight: 800; text-decoration: underline;">Tokyo </span>là où nous prévoyons d'organiser une exposition dans les mois à venir.</p>
+                    <div class="button-section">
+                      <button type="button" class="btn btn-primary" style="border: 2px solid rgb(231, 235, 14);" data-bs-toggle="button">En savoir plus</button>
+                    </div>
+              </div>
+          </div>
+          
+          <!-- Second Column -->
+          <div class="col-md-5 col-sm-12" >
+              <div class="bg-light p-3" style="border: 3px solid yellowgreen;">
+                  <!-- Content for the second column -->
+                  <h4>Welcome to our home page</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+          </div>
 
+          <div class="col-md-5 col-sm-12" style="margin-top: 25px; ">
+            <div class="bg-primary p-3" style="border-radius: 10px; border: 2px solid yellow;">
+                <!-- Content for the first column -->
+                <h4 style="color: whitesmoke;">Projets en cours de developpement</h4>
+                <p style="color: whitesmoke; text-decoration: underline; text-underline-offset: 3px;">This is the content of the first column.</p>
+                <ul class="style2">
+                  <li><a href="#">Projet de Recherche sur les Nano-dispositifs d'IA pour la Détection Précoce des Maladies. </a></li>
+                  <li><a href="#">Développement de Nano-Implants d'IA pour la Régénération Cellulaire.</a></li>
+                  <li><a href="#">Système de Contrôle de Nano-dispositifs par IA pour le Traitement des Maladies Cardiovasculaires.</a></li>
+                  <li><a href="#">Plateforme d'IA pour la Surveillance Continue de la Santé.</a></li>
+                 <li><a href="#">Développement d'Algorithmes d'IA pour la Gestion des Nano-dispositifs dans le Corps Humain.</a></li>
+                 <li><a href="#">Étude Clinique sur l'Utilisation des Nano-dispositifs Contrôlés par IA dans le Traitement du Cancer</a></li>
+                 <li><a href="#">Plateforme de Télémédecine avec Nano-capteurs IA.</a></li>
+                 <li><a href="#">Système de Nano-dispositifs IA pour la Délivrance de Médicaments Personnalisés.</a></li>
+                <li><a href="#">Nano-dispositifs IA pour la Prévention des Maladies Infectieuses .</a></li>
+              </ul>
+              <button type="button" class="btn  btn-info" data-bs-toggle="button">En savoir plus</button>
+              </div>
+        </div>
+
+          <!-- Second Column -->
+          <div class="col-md-7 col-sm-12"style="margin-top: 10px;">
+            <div class="bg-secondary p-3" style="border-radius: 10px; border: 2px solid whitesmoke;">
+
+                <!-- Content for the second column -->
+                <h4 style="color: whitesmoke;">Nano-dispositifs controlés par l'IA pour la régeneration cellulaire</h4>
+                  <p style="text-underline-offset: 3px; text-decoration: underline;">L'Épopée Microscopique : L'IA au Service de la Régénération Cellulaire</p> 
+                <p>Les dispositifs nano-implantés, une prouesse technologique miniature, sont conçus pour
+                 surveiller en permanence l'état des cellules sanguines à l'intérieur du corps humain. 
+                 À un niveau microscopique, ces nano-dispositifs sont introduits dans le flux sanguin 
+                 à l'aide de procédures médicales non invasives.</p>
+
+                 <p>L'intervention de l'intelligence artificielle se produit à une étape cruciale : 
+                  dès qu'une cellule est identifiée comme endommagée ou présentant des signes de défaillance, 
+                  l'IA prend le relais. Les nano-dispositifs sont équipés de capteurs sophistiqués capables 
+                  de détecter les moindres anomalies cellulaires.</p>
+
+
+                  <p>Lorsqu'une cellule problématique est repérée, l'IA déclenche des mécanismes 
+                    de réparation précis. Ces nano-dispositifs sont également programmés pour libérer 
+                   des agents de régénération ciblés, qui peuvent contribuer à la réparation des cellules 
+                   défectueuses.</p>
+       
+                 <p>La grande avancée réside dans la rapidité de cette intervention. 
+                     Grâce à des algorithmes d'IA sophistiqués, le processus de détection et de 
+                     réparation est quasi-instantané, permettant de prévenir les problèmes de santé potentiels 
+                     bien avant qu'ils ne deviennent graves.</p>
+       
+                 <p>La période de récupération est extrêmement courte, car les interventions sont minimes
+                    et spécifiques. La plupart des patients peuvent reprendre leurs activités normales en un temps 
+                    record.</p>
+       
+                 <p>L'ensemble de ce processus est entièrement contrôlé par l'intelligence artificielle, 
+                     qui surveille chaque cellule du corps en temps réel. Cette technologie révolutionnaire 
+                     offre un potentiel considérable pour la détection précoce des maladies, 
+                     la régénération cellulaire et l'amélioration globale de la santé.</p>
+       
+                     <div class="button-container">
+                       <button class="btn btn-primary me-md-2" type="button">Lire la suite</button>
+                     </div>
+            </div>
+        </div>
+      </div> 
+  </div>
+  </div>
   
+    
+        <!-- copyright information, privacy policy/terms of service links, contact information -->
+        <footer>
+          <div class="container ">
+            <div class=footer-container p-3 style="background-color: rgba(231, 235, 14, 0.9);">
+              <div class="row">
+                <div class="col-md-3 col-sm-12 footer-links">
+
+                  <!-- Links -->
+
+                  <section>
+                    <h3 style="color: antiquewhite;">liens utiles</h3>
+                    <ul class="divided">
+											<li><a href="#">IBM Watson Health</a></li>
+											<li><a href="#">MIT Technology Review - Healthcare </a></li>
+											<li><a href="#">Stanford Center for Artificial Intelligence in Medicine and Imaging</a></li>
+											<li><a href="#">National Institutes of Health (NIH) - Artificial Intelligence</a></li>
+											<li><a href="#">PubMed Central - AI in Medicine</a></li>
+											<li><a href="#">Google Health - AI in Healthcare</a></li>
+											<li><a href="#">Microsoft Healthcare - AI in Healthcare</a></li>
+											<li><a href="#">Cleveland Clinic - Center for Artificial Intelligence in Medicine</a></li>
+											<li><a href="#">Johns Hopkins Medicine - Center for Imaging Science</a></li>
+											<li><a href="#">Harvard Medical School - Program in AI and Machine Learning</a></li>					
+										</ul>
+                  </section>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                  <section>
+                    <h3 style="color: antiquewhite;">nos partenaires</h3>
+                    <ul class="divided">
+											<li><a href="#">Mayo Clinic - Center for Individualized Medicine</a></li>
+											<li><a href="#">American Medical Association (AMA) - AI in Healthcare</a></li>
+											<li><a href="#">Healthcare Information and Management Systems Society (HIMSS) - AI in Healthcare</a></li>										
+										</ul>
+                  </section>
+
+                 <br></br>
+
+                  <section>
+                    <h3 style="color: antiquewhite;">parrainage</h3>
+										<ul class="divided">
+											<li><a href="#">Bill and Melinda Gates Foundation</a></li>
+											<li><a href="#">Chan Zuckerberg Initiative</a></li>
+											<li><a href="#">Wellcome Trust</a></li>
+											<li><a href="#">Google AI for Social Good</a></li>
+											<li><a href="#">OpenAI</a></li>
+											<li><a href="#">IBM Watson Health</a></li>
+											<li><a href="#">AI in Healthcare Research Institutes</a></li>
+										</ul>
+                  </section>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                  <!-- About -->
+
+                  <section>
+                    <h3 style="color: antiquewhite;"><strong>Politique de confidentialité</strong> par AI IT MEDICASAVE</h3>
+										<p>Notre politique de confidentialité explique comment nous collectons, utilisons, 
+										partageons et protégeons vos informations personnelles lorsque vous visitez notre 
+										site Web. Nous vous encourageons à lire attentivement cette politique pour 
+										comprendre vos droits et notre engagement envers la protection de vos données.</p>
+                    <div class="footer-button">
+                      <button type="button" class="btn btn-primary">Découvrir</button>
+                    </div>
+                  </section>
+
+
+                  <aside>
+                    <h3 style="color:antiquewhite;">nous contacter</h3>
+                    <dl class="contact">
+                    <dt><i class="fa-brands fa-twitter" style="margin-right: 10px; color: rgb(19, 129, 224);" ></i>Twitter</dt>
+                    <dd><a href="#">@untitled-corp</a></dd>
+                    <dt><i class="fa-brands fa-facebook" style="margin-right: 10px; color: rgb(19, 129, 224);"></i>Facebook</dt>
+                    <dd><a href="#">facebook.com/untitled</a></dd>
+                    <dt></i><i class="fa-solid fa-globe fa-flip" style="margin-right: 10px; color: rgb(19, 129, 224);"></i>WWW</dt>
+                    <dd><a href="#">untitled.tld</a></dd>
+                    <dt><i class="fa-solid fa-at" style="margin-right: 10px; color: rgb(19, 129, 224);"></i>Email</dt>
+                    <dd><a href="#">user@untitled.tld</a></dd>
+                    </dl>
+                   </aside>
+
+                   <!-- Side-by-side Columns -->
+                   <asice class="right-aside">
+                    <dl class="contact">
+                      <dt> <i class="fa-solid fa-location-dot" style="margin-right: 10px; color: rgb(19, 129, 224);"></i>Adresse</dt>
+                      <dd>
+                        1234 Fictional Rd<br />
+                        Nashville, TN 00000-0000<br />
+                        USA
+                      </dd>
+                      <dt><i class="fa-solid fa-phone fa-bounce" style="margin-right: 10px; color: rgb(19, 129, 224);"></i>Téléphone</dt>
+                      <dd>(000) 000-0000</dd>
+                    </dl>
+                  </div>
+                   </asice> 
+
+                   <div class="copy-right">
+                    <ul class="menu">
+                      <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="">MEDICASAVE</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+
+        </footer>
+
+<!-- Include Bootstrap JavaScript and jQuery here if needed -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
